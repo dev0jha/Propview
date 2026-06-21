@@ -2,11 +2,6 @@
 
 A simple property listing website built with Next.js (App Router), featuring SSR for the listing page and SSG for property detail pages.
 
-## Demo
-
-<video width="800" controls>
-  <source src="./public/PropView Demo.mp4" type="video/mp4">
-</video>
 
 ## Features
 
