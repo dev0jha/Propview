@@ -1,6 +1,6 @@
 # PropView - Property Listing Website
 
-A simple property listing website built with Next.js (App Router), featuring SSR for the listing page and SSG for property detail pages.
+A simple property listing website built with Next.js, featuring SSR for the listing page and SSG for property detail pages.
 
 
 ## Features
