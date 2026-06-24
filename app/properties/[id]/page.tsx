@@ -63,7 +63,7 @@ export default async function PropertyDetailPage({ params }: Props) {
 
       <div className="grid gap-8 lg:grid-cols-2">
         <div>
-          <div className="relative overflow-hidden rounded-xl aspect-4/3">
+          <div className="relative aspect-4/3 overflow-hidden rounded-xl">
             <Image
               src={property.image}
               alt={property.title}
@@ -76,14 +76,17 @@ export default async function PropertyDetailPage({ params }: Props) {
           {property.images.length > 1 && (
             <div className="mt-4 grid grid-cols-3 gap-3">
               {property.images.map((img, i) => (
-              <div key={i} className="relative overflow-hidden rounded-lg h-24">
-                    <Image
-                      src={img}
-                      alt={`${property.title} - image ${i + 1}`}
-                      fill
-                      sizes="200px"
-                      className="object-cover"
-                    />
+                <div
+                  key={i}
+                  className="relative h-24 overflow-hidden rounded-lg"
+                >
+                  <Image
+                    src={img}
+                    alt={`${property.title} - image ${i + 1}`}
+                    fill
+                    sizes="200px"
+                    className="object-cover"
+                  />
                 </div>
               ))}
             </div>

@@ -12,7 +12,7 @@ export function PropertyCard({ property }: { property: Property }) {
   return (
     <Link
       href={`/properties/${property.id}`}
-      className="group block overflow-hidden rounded-xl border border-zinc-200 bg-white shadow-sm transition-all hover:shadow-md hover:-translate-y-0.5 dark:border-zinc-800 dark:bg-zinc-900"
+      className="group block overflow-hidden rounded-xl border border-zinc-200 bg-white shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900"
     >
       <div className="relative aspect-4/3 overflow-hidden">
         <Image
@@ -27,10 +27,10 @@ export function PropertyCard({ property }: { property: Property }) {
         </span>
       </div>
       <div className="p-4">
-        <h3 className="font-semibold text-zinc-900 truncate dark:text-zinc-100">
+        <h3 className="truncate font-semibold text-zinc-900 dark:text-zinc-100">
           {property.title}
         </h3>
-        <p className="mt-1 text-sm text-zinc-500 truncate dark:text-zinc-400">
+        <p className="mt-1 truncate text-sm text-zinc-500 dark:text-zinc-400">
           {property.location}
         </p>
         <div className="mt-3 flex items-center gap-4 text-sm text-zinc-600 dark:text-zinc-300">
